@@ -4,21 +4,7 @@
 * Trained on 8k messages with 5k epochs
 
 ### Installing
-
-Maven:
-```
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
-
-<dependency>
-    <groupId>com.github.BadlyDrunkScotsman</groupId>
-    <artifactId>SV4J</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
-Jar: [link](https://github.com/BadlyDrunkScotsman/SV4J/releases/download/1.0.1/MessageValidation_main.jar)
+Jar: [link](https://github.com/BadlyDrunkScotsman/SV4J/releases/tag/1.0.0)
 
 ### Examples
 ```
