@@ -10,7 +10,7 @@ Jar: [link](https://github.com/BadlyDrunkScotsman/SV4J/releases/tag/1.0.0)
 ```
 public class MessageValidatorTest {
 
-    private MessageValidator mv = new MessageValidator(false);
+    private MessageValidator mv = new MessageValidator();
 
     public static void main(String... args){
         //Simple validation
