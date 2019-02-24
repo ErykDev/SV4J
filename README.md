@@ -47,9 +47,9 @@ public class MessageValidatorTest {
 
 ## Built With
 
-* [DL4J](https://github.com/deeplearning4j/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [DL4J](https://github.com/deeplearning4j/)
+* [ND4J](https://github.com/deeplearning4j/nd4j)
+* [SLF4J](https://www.slf4j.org/)
 
 
 ## License
