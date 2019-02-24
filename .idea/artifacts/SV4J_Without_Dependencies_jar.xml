@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SV4J_Without_Dependencies:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SV4J_Without_Dependencies_jar</output-path>
+    <root id="archive" name="MessageValidation_main.jar">
+      <element id="module-output" name="MessageValidation_main" />
+    </root>
+  </artifact>
+</component>

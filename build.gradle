@@ -1,0 +1,82 @@
+group 'org.sv4j'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        dl4j_version = "1.0.0-beta3"
+    }
+    repositories {
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        mavenCentral()
+    }
+
+}
+
+apply plugin: "application"
+
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-ui
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-ui_2.11', version: dl4j_version
+
+    // https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-zoo
+    //compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: dl4j_version
+
+    // https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-nn
+    //compile group: 'org.deeplearning4j', name: 'deeplearning4j-nn', version: dl4j_version
+
+    // https://mvnrepository.com/artifact/org.deeplearning4j/arbiter-core
+    //compile group: 'org.deeplearning4j', name: 'arbiter-core', version: dl4j_version
+    // https://mvnrepository.com/artifact/org.deeplearning4j/arbiter-deeplearning4j
+    //compile group: 'org.deeplearning4j', name: 'arbiter-deeplearning4j', version: dl4j_version
+    // https://mvnrepository.com/artifact/org.deeplearning4j/arbiter-server
+    //compile group: 'org.deeplearning4j', name: 'arbiter-server', version: dl4j_version
+    // https://mvnrepository.com/artifact/org.deeplearning4j/arbiter-ui
+    //compile group: 'org.deeplearning4j', name: 'arbiter-ui_2.11', version: dl4j_version
+    // https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-parallel-wrapper
+        //compile group: 'org.deeplearning4j', name: 'deeplearning4j-parallel-wrapper', version: dl4j_version
+
+
+    // https://mvnrepository.com/artifact/org.datavec/datavec-hadoop
+    //compile group: 'org.datavec', name: 'datavec-hadoop', version: dl4j_version
+
+
+    compile "org.deeplearning4j:deeplearning4j-core:${dl4j_version}"
+
+    compile "org.nd4j:nd4j-native-platform:${dl4j_version}"
+
+    compile "org.slf4j:slf4j-api:1.7.25"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "3.5"
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+sourceSets {
+    main {
+        /*
+        Kotlin examples do not use java sources, so let's exclude them all
+         */
+        java {
+            srcDir "src/main/java"
+            exclude "**"
+        }
+    }
+}
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
