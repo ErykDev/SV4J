@@ -1,6 +1,6 @@
 # Spam validation for Java (sv4j)
  
-* Project is based on [CnnSentenceClassification from DL4J examples](https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/convolution/sentenceclassification/CnnSentenceClassificationExample.java)
+* Project is based on [CnnSentenceClassification from DL4J examples](https://github.com/eclipse/deeplearning4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/advanced/modelling/textclassification/pretrainedword2vec/ImdbReviewClassificationCNN.java)
 * Trained on 8k messages with 5k epochs
 
 ### Installing
