@@ -4,7 +4,7 @@
 * Trained on 8k messages with 5k epochs
 
 ### Installing
-Jar: [link](https://github.com/BadlyDrunkScotsman/SV4J/releases/tag/1.0.0)
+Jar: [link](https://github.com/BadlyDrunkScotsman/SV4J/releases/tag/1.0.1)
 
 ### Examples
 ```
