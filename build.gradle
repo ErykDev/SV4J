@@ -20,7 +20,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.12'
+
+    compileOnly('org.projectlombok:lombok:1.18.12')
+    annotationProcessor('org.projectlombok:lombok:1.18.12')
 
     implementation group: 'org.deeplearning4j', name: 'deeplearning4j-ui_2.11', version: dl4j_version
     implementation "org.deeplearning4j:deeplearning4j-core:${dl4j_version}"

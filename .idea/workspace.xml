@@ -7,54 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f369855a-f83a-431a-9949-ba7f0da352f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MessageValidation1_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/file-changes/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/built.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SV4J_Without_Dependencies_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SV4J_Without_Dependencies_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SV4J_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin-build/version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SV4J_Without_Dependencies_jar/MessageValidation_main.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SV4J_Without_Dependencies_jar/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z03" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.z07" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sv4j_jar/sv4j_jar.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/MyMultiLayerNetwork.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PreTrainedNet.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/WordVectors.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/sv4j/MessageValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/sv4j/core/NeuralNetwork.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/sv4j/core/NeuralTraining.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/sv4j/exc/MessageReadingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/sv4j/out/NeuralNetOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/org/sv4j/MessageValidatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sv4j/MessageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sv4j/MessageValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sv4j/core/NeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sv4j/core/NeuralNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sv4j/core/NeuralTraining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sv4j/core/NeuralTraining.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sv4j/out/NeuralNetOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sv4j/out/NeuralNetOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MyMultiLayerNetwork.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sv4j/MessageValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/MessageValidatorTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="f369855a-f83a-431a-9949-ba7f0da352f1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
