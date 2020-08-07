@@ -1,0 +1,6 @@
+/out/test/
+/gradle/
+/.gradle/
+/build/
+out/production/classes/
+*.class

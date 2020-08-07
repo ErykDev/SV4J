@@ -1,5 +1,6 @@
 package org.sv4j.core;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.iterator.CnnSentenceDataSetIterator;
@@ -9,8 +10,6 @@ import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
 import org.deeplearning4j.nn.graph.ComputationGraph;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.util.*;
@@ -18,9 +17,8 @@ import java.util.*;
 /**
  * Class meant for training existing NeuralNetwork
  */
+@Slf4j
 public class NeuralTraining {
-
-    private static Logger Log = LoggerFactory.getLogger(NeuralTraining.class);
 
     private ComputationGraph _MultiLayerNetwork;
     private ScoreIterationListener _ScoreIterationListener = new ScoreIterationListener(10);
@@ -59,7 +57,7 @@ public class NeuralTraining {
      * @param epochs number of epochs
      */
     public void training(int epochs) {
-        Log.info("Training Neural Network");
+        log.info("Training Neural Network");
 
         DataSetIterator trainIter = getDataSetIterator(true,_WordVec , batchSize, truncateReviewsToLength, rng);
         DataSetIterator testIter = getDataSetIterator(false, _WordVec, batchSize, truncateReviewsToLength, rng);

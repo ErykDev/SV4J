@@ -1,21 +1,21 @@
 package org.sv4j.out;
 
-import org.slf4j.LoggerFactory;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
-
+@Slf4j
 public final class NeuralNetOutput {
-
-    private static org.slf4j.Logger Log = LoggerFactory.getLogger(NeuralNetOutput.class);
-
     /**
      * Spam score
      */
-    private double _SpamScore;
+    @Getter
+    private double spamScore;
 
     /**
      * Non spam score
      */
-    private double _PosScore;
+    @Getter
+    private double posScore;
 
 
     /**
@@ -23,42 +23,28 @@ public final class NeuralNetOutput {
      * @param posScore positive label score
      */
     public NeuralNetOutput(double spamScore, double posScore) {
-        _SpamScore = spamScore;
-        _PosScore = posScore;
+        this.spamScore = spamScore;
+        this.posScore = posScore;
     }
 
     /**
      * @return result of classification
      */
     public boolean isSpam(){
-        return Double.compare(_SpamScore,_PosScore) < 0;
-    }
-
-    /**
-     * @return spam score
-     */
-    public double getSpamScore() {
-        return _SpamScore;
-    }
-
-    /**
-     * @return non spam score
-     */
-    public double getPosScore() {
-        return _PosScore;
+        return Double.compare(spamScore, posScore) < 0;
     }
 
     /**
      * printing Neural network output
      */
     public void printValues(){
-        Log.info("\nPositive:"+_PosScore+"\nSpam:"+_SpamScore+"\nisSpam():"+this.isSpam());
+        log.info("\nPositive:"+ posScore +"\nSpam:"+ spamScore +"\nisSpam():"+this.isSpam());
     }
 
     /**
      * @return Neural network output serialized to json
      */
     public String toJson(){
-        return "{\nPositive:"+_PosScore+",\nSpam:"+_SpamScore+"\n}";
+        return "{\nPositive:"+ posScore +",\nSpam:"+ spamScore +"\n}";
     }
 }

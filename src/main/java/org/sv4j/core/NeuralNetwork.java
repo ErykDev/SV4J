@@ -1,5 +1,6 @@
 package org.sv4j.core;
 
+import lombok.extern.slf4j.Slf4j;
 import org.datavec.api.util.ClassPathResource;
 import org.deeplearning4j.iterator.CnnSentenceDataSetIterator;
 import org.deeplearning4j.iterator.LabeledSentenceProvider;
@@ -32,16 +33,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 
 /**
  * Class for loading and initializing Neural network and wordVectors
  */
+@Slf4j
 public final class NeuralNetwork {
-
-    private static Logger Log = LoggerFactory.getLogger(NeuralNetwork.class);
 
     ComputationGraph multiLayerNetwork;
     WordVectors wordVec;
@@ -61,11 +58,11 @@ public final class NeuralNetwork {
     }
 
     private void init(){
-        Log.info("Initializing NeuralNetwork");
+        log.debug("Initializing NeuralNetwork");
         try {
             multiLayerNetwork = this.loadNetwork();
         }catch (IOException e){
-            Log.info("Err while loading network. Building new one");
+            log.error("Err while loading network. Building new one");
 
             multiLayerNetwork = this.buildNetworkModel();
         }
@@ -99,7 +96,7 @@ public final class NeuralNetwork {
     }
 
     private ComputationGraph buildNetworkModel(){
-        Log.info("BUILD MODEL");
+        log.debug("BUILDING MODEL");
 
         Nd4j.getMemoryManager().setAutoGcWindow(5000);
 
@@ -149,13 +146,13 @@ public final class NeuralNetwork {
      * @throws IOException while reading NeuralNetwork model
      */
     private ComputationGraph loadNetwork() throws IOException {
-        Log.info("LOADING MODEL");
-        return ComputationGraph.load(new ClassPathResource("MyMultiLayerNetwork.zip").getFile(),true);
+        log.debug("LOADING MODEL");
+        return ComputationGraph.load(new ClassPathResource("PreTrainedNet.zip").getFile(),true);
     }
 
     public static void saveMultiLayerNetwork(NeuralNetwork net) throws IOException {
-        Log.info("SAVING MODEL");
-        ModelSerializer.writeModel(net.multiLayerNetwork, new ClassPathResource("MyMultiLayerNetwork.zip").getFile(), false);
+        log.debug("SAVING MODEL");
+        ModelSerializer.writeModel(net.multiLayerNetwork, new ClassPathResource("PreTrainedNet.zip").getFile(), false);
     }
 
     /**
@@ -163,7 +160,7 @@ public final class NeuralNetwork {
      * @throws IOException while reading vectors model
      */
     private WordVectors getWordVectors() throws IOException {
-        Log.info("LOADING Words2Vec MODEL");
+        log.debug("LOADING Words2Vec MODEL");
         return WordVectorSerializer
                 .loadStaticModel(new ClassPathResource("WordVectors.txt").getFile());
     }

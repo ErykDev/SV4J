@@ -1,5 +1,7 @@
 package org.sv4j;
 
+
+import lombok.Getter;
 import org.sv4j.core.NeuralNetwork;
 import org.sv4j.exc.MessageReadingException;
 import org.sv4j.out.NeuralNetOutput;
@@ -12,23 +14,19 @@ public final class MessageValidator {
     /**
      * Variable for initializing NeuralNetwork
      */
-    private NeuralNetwork nn;
+    @Getter
+    private NeuralNetwork neuralValidator;
 
     public MessageValidator(){
-        nn = new NeuralNetwork();
+        neuralValidator = new NeuralNetwork();
     }
-
 
     /**
      * @param s Message to validate
      * @return validation results
      */
-    public boolean isSpam(String s){
-        try {
-            return nn.testSubject(s).isSpam();
-        } catch (MessageReadingException e) {
-            return true;
-        }
+    public boolean isSpam(String s) throws MessageReadingException{
+        return neuralValidator.testSubject(s).isSpam();
     }
 
     /**
@@ -36,6 +34,6 @@ public final class MessageValidator {
      * @return validation results
      * */
     public NeuralNetOutput getOutputFor(String s) throws MessageReadingException {
-        return nn.testSubject(s);
+        return neuralValidator.testSubject(s);
     }
 }
